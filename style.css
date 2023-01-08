@@ -1,0 +1,341 @@
+:root{
+  --blue: #030029;
+  --orange: #F37821;
+  --dark-grey: #747474;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+nav{
+  display: flex;
+  background-color: var(--blue);
+  justify-content: space-between;
+  padding: 15px 50px;
+  align-items: center;
+  font-size: 12px;
+}
+nav a{
+  color: white;
+}
+nav .logo{
+  width: 12%;
+  z-index: 10;
+}
+nav .logo img{
+  width: 100%;
+}
+nav .links{
+  display: flex;
+  gap: 45px;
+}
+nav .access-btns{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+nav .access-btns a:first-child{
+  border-radius: 1000px;
+  padding: 8px 20px;
+  border: 1px solid var(--orange);
+}
+nav .access-btns a:first-child:hover{
+  background-color: var(--orange);
+  color: white;
+}
+nav .access-btns a:last-child{
+  border-radius: 1000px;
+  padding: 8px 20px;
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+}
+nav .access-btns a:last-child:hover{
+  background-color: transparent;
+}
+nav .responsive-nav{
+  display: none;
+}
+nav .menu,
+nav .close{
+  display: none;
+  z-index: 10;
+  font-size: 20px;
+  color: white;
+}
+.body{
+  width: 75%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body .left{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.body .left h3{
+  color: var(--blue);
+  width: 80%;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+}
+.body .left h1{
+  color: var(--orange);
+  font-size: 40px;
+  line-height: 45px;
+}
+.body .left > p{
+  font-weight: 400;
+  color: var(--dark-grey);
+  font-size: 13px;
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+.body .left form{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 8px;
+}
+.body .left form .relative{
+  position: relative;
+}
+.body .left form .relative i{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 15px;
+  color: var(--dark-grey);
+}
+.body .left form .relative input{
+  width: 75%;
+  border-radius: 1000px;
+  padding: 8px 15px;
+  padding-left: 40px;
+  border: 1px solid var(--dark-grey);
+  color: var(--dark-grey);
+  outline: none;
+  font-size: 12px;
+}
+.body .left form .relative input::placeholder{
+  color: var(--dark-grey);
+  font-size: 12px;
+}
+.body .left form > input{
+  background-color: var(--orange);
+  width: fit-content;
+  font-size: 12px;
+  border-radius: 1000px;
+  padding: 5px 20px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid var(--orange);
+  color: white;
+  font-weight: 500;
+}
+.body .left .about{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.body .left .about .about-items{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 49%;
+  margin-bottom: 10px;
+}
+.body .left .about .about-items .fa-check{
+  background-color: var(--orange);
+  border-radius: 1000px;
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+}
+.body .left .about .about-items .about-items-text{
+  color: var(--dark-grey);
+  font-size: 12px;
+}
+.body .left h4{
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 14px;
+}
+.body .right{
+  width: 35%;
+}
+.body .right img{
+  width: 100%;
+}
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 20;
+}
+.modal .modal-content{
+  width: 33.3%;
+  background-color: var(--blue);
+  border-radius: 10px;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  text-align: center;
+}
+.modal .modal-content .close{
+  border-radius: 1000px;
+  padding: 5px;
+  text-align: right;
+  cursor: pointer;
+}
+.modal .modal-content .close:hover{
+  color: var(--orange);
+}
+.modal .modal-content h1{
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--orange);
+}
+.modal .modal-content p{
+  font-weight: 500;
+  color: var(--dark-grey);
+  font-size: 14px;
+}
+.modal .modal-content form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 1000px;
+  gap: 12px;
+}
+.modal .modal-content form .relative{
+  width: 75%;
+  position: relative;
+}
+.modal .modal-content form .relative i{
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  width: 12px;
+  color: var(--dark-grey);
+}
+.modal .modal-content form .relative input{
+  width: 100%;
+  border-radius: 1000px;
+  border: transparent;
+  padding: 8px 15px;
+  padding-left: 30px;
+  color: var(--dark-grey);
+  outline: none;
+  font-size: 12px;
+}
+.modal .modal-content form .relative input::placeholder{
+  color: var(--dark-grey);
+  font-size: 12px;
+}
+.modal .modal-content form > input{
+  background-color: var(--orange);
+  outline: none;
+  font-size: 12px;
+  border-radius: 1000px;
+  border: transparent;
+  padding: 8px 15px;
+  cursor: pointer;
+  width: 25%;
+  color: white;
+  font-weight: 500;
+}
+
+@media (max-width:800px){
+  nav{
+    padding: 10px 25px;
+  }
+  nav .logo{
+    width: 40%;
+  }
+  nav .links,
+  nav .access-btns{
+    display: none;
+  }
+  nav .responsive-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--blue);
+    z-index: 5;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+  }
+  nav .responsive-nav a:nth-child(4){
+    border-radius: 1000px;
+    border: 1px solid var(--orange);
+    padding: 8px 20px;
+  }
+  nav .responsive-nav a:nth-child(5){
+    border-radius: 1000px;
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
+    padding: 8px 20px;
+  }
+  nav .menu{
+    display: block;
+  }
+  .body{
+    width: 90%;
+    padding: 25px 0;
+    flex-direction: column-reverse;
+  }
+  .body .left{
+    width: 100%;
+  }
+  .body .left h3{
+    width: 100%;
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .body .left h1{
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .body .left .about{
+    flex-direction: column;
+  }
+  .body .left .about .about-items{
+    width: 100%;
+    gap: 8px;
+  }
+  .body .right{
+    width: 100%;
+  }
+  .modal .modal-content{
+    width: 90%;
+    padding: 45px 25px;
+    gap: 15px;
+  }
+}

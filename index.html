@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width======================, initial-scale=1.0">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <!-- TITLE -->
+  <title>Engineers Hub</title>
+  <!-- SCRIPT LINKING -->
+  <script src="script.js" defer></script>
+  <!-- STYLESHEET LINKING -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FONT LINKING -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+    rel="stylesheet" />
+  <!-- ICONS LINKING -->
+  <script src="https://kit.fontawesome.com/633d31f41f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="./assets/logo.png" alt="logo">
+    </div>
+    <div class="links">
+      <a class="modal-show">Find Job</a>
+      <a class="modal-show">Post a Job</a>
+      <a class="modal-show">Companies</a>
+    </div>
+    <div class="access-btns">
+      <a class="modal-show">Register</a>
+      <a class="modal-show">Login</a>
+    </div>
+    <div class="responsive-nav" id="responsive-nav">
+        <a class="modal-show">Find Job</a>
+        <a class="modal-show">Post a Job</a>
+        <a class="modal-show">Companies</a>
+        <a class="modal-show">Register</a>
+        <a class="modal-show">Login</a>
+    </div>
+    <i class="fa-solid fa-bars menu" id="menu"></i>
+    <i class="fa-solid fa-xmark close" id="close"></i>
+  </nav>
+
+  <div class="body">
+    <div class="left">
+      <h3>Online Social Platform For Engineers.</h3>
+      <h1>Coming Soon</h1>
+      <p>Be the first to know when we launch.</p>
+      <form name="contact" method="POST" data-netlify="true">
+        <div class="relative">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Enter Email Address" name="email"/>
+        </div>
+        <input type="submit" value="Subscribe" />
+      </form>
+
+      <div class="about">
+        <div class="about-items">
+          <i class="fa-solid fa-check"></i>
+          <p class="about-items-text">Connect with other engineers</p>
+        </div>
+        <div class="about-items">
+          <i class="fa-solid fa-check"></i>
+          <p class="about-items-text">
+            Connect with top engineering firms
+          </p>
+        </div>
+        <div class="about-items">
+          <i class="fa-solid fa-check"></i>
+          <p class="about-items-text">
+            Get employed by top Engineering firms
+          </p>
+        </div>
+        <div class="about-items">
+          <i class="fa-solid fa-check"></i>
+          <p class="about-items-text">
+            Collaborate with other Engineering firms
+          </p>
+        </div>
+        <div class="about-items">
+          <i class="fa-solid fa-check"></i>
+          <p class="about-items-text">
+            Access professional Training Firms for Engineers
+          </p>
+        </div>
+        <div class="about-items">
+          <i class="fa-solid fa-check"></i>
+          <p class="about-items-text">Be visible to the world</p>
+        </div>
+        <div class="about-items">
+          <i class="fa-solid fa-check"></i>
+          <p class="about-items-text">
+            Share your engineering contents, innovations, and research updates
+            with the world
+          </p>
+        </div>
+        <div class="about-items">
+          <i class="fa-solid fa-check"></i>
+          <p class="about-items-text">
+            Connect with local and international Engineering organizations
+          </p>
+        </div>
+      </div>
+
+      <h4>All engineers in one platform.</h4>
+    </div>
+    <div class="right">
+      <img src="./assets/landing-search.png" alt="image of an engineer">
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modal-content">
+      <i class="fa-solid fa-xmark close" id="close-modal"></i>
+      <h1>COMING SOON</h1>
+      <p>Be the first to hear about latest updates, opportunities and freebies from Engineers Hub when you subscribe to our News letter</p>
+      <form name="modal" method="POST" data-netlify="true">
+        <div class="relative">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Enter Email Address" name="email"/>
+        </div>
+        <input type="submit" value="Subscribe" />
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
